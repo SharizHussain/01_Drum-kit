@@ -1,16 +1,25 @@
 import React, { useEffect } from 'react';
+import audio1 from '/src/assets/audio/01 - JavaScript Drum Kit_sounds_boom.wav'
+import audio2 from '/src/assets/audio/01 - JavaScript Drum Kit_sounds_clap.wav'
+import audio3 from '/src/assets/audio/01 - JavaScript Drum Kit_sounds_hihat.wav'
+import audio4 from '/src/assets/audio/01 - JavaScript Drum Kit_sounds_kick.wav'
+import audio5 from '/src/assets/audio/01 - JavaScript Drum Kit_sounds_openhat.wav'
+import audio6 from '/src/assets/audio/01 - JavaScript Drum Kit_sounds_ride.wav'
+import audio7 from '/src/assets/audio/01 - JavaScript Drum Kit_sounds_snare.wav'
+import audio8 from '/src/assets/audio/01 - JavaScript Drum Kit_sounds_tink.wav'
+import audio9 from '/src/assets/audio/01 - JavaScript Drum Kit_sounds_tom.wav'
 
 const DrumKit = () => {
     const keys = [
-        { key: 65, letter: 'A', sound: 'Boom', src:'/src/assets/audio/01 - JavaScript Drum Kit_sounds_boom.wav' },
-        { key: 83, letter: 'S', sound: 'Clap', src: '/src/assets/audio/01 - JavaScript Drum Kit_sounds_clap.wav' },
-        { key: 68, letter: 'D', sound: 'Hihat', src: '/src/assets/audio/01 - JavaScript Drum Kit_sounds_hihat.wav' },
-        { key: 70, letter: 'F', sound: 'Kick', src: '/src/assets/audio/01 - JavaScript Drum Kit_sounds_kick.wav' },
-        { key: 71, letter: 'G', sound: 'Openhat', src: '/src/assets/audio/01 - JavaScript Drum Kit_sounds_openhat.wav' },
-        { key: 72, letter: 'H', sound: 'Ride', src: '/src/assets/audio/01 - JavaScript Drum Kit_sounds_ride.wav' },
-        { key: 74, letter: 'J', sound: 'Snare', src: '/src/assets/audio/01 - JavaScript Drum Kit_sounds_snare.wav' },
-        { key: 75, letter: 'K', sound: 'Tink', src: '/src/assets/audio/01 - JavaScript Drum Kit_sounds_tink.wav' },
-        { key: 76, letter: 'L', sound: 'Tom', src: '/src/assets/audio/01 - JavaScript Drum Kit_sounds_tom.wav' },
+        { key: 65, letter: 'A', sound: 'Boom', src: audio1 },
+        { key: 83, letter: 'S', sound: 'Clap', src: audio2},
+        { key: 68, letter: 'D', sound: 'Hihat', src: audio3},
+        { key: 70, letter: 'F', sound: 'Kick', src: audio4},
+        { key: 71, letter: 'G', sound: 'Openhat', src: audio5},
+        { key: 72, letter: 'H', sound: 'Ride', src: audio6},
+        { key: 74, letter: 'J', sound: 'Snare', src: audio7},
+        { key: 75, letter: 'K', sound: 'Tink', src: audio8},
+        { key: 76, letter: 'L', sound: 'Tom', src: audio9},
     ];
 
     const playSound = (e) => {

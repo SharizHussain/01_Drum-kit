@@ -1,0 +1,84 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: banana-font;
+  src: url('./assets/font/bananas-italic-font/BananasItalicPersonalUseRegular-WyBxO.ttf');
+}
+.main{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+
+.bgImg{
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background: url('antoine-j-FNieWqIDsJA-unsplash.jpg');
+  transition: 0.5s;
+  animation: hue_rotate 10s linear infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes hue_rotate {
+  to{
+      filter: hue-rotate(360deg);
+  }
+}
+
+h1{
+  position: absolute;
+  top: 50px;
+  font-family: banana-font;
+  font-size: 60px;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.key{
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  backdrop-filter: blur(20px);
+  text-align: center;
+  font-size: x-large;
+  padding: 4px;
+}
+
+.key span{
+  /* position: absolute; */
+  text-align: center;
+  font-size: small;
+}
+.key:nth-child(7){
+  padding-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .key{
+      margin-top: 150px;
+  }
+  .key:nth-child(6), :nth-child(7), :nth-child(8){
+      margin-top: -250px;
+  }
+  .key:nth-child(9), :nth-child(10), :nth-child(11){
+      margin-top: -400px;
+  }
+}
+
+.playing{
+  border: 2px solid white;
+  transform: scale(1.2);
+  transition: .5s;
+}

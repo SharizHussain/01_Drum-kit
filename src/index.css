@@ -75,6 +75,12 @@ h1{
   .key:nth-child(9), :nth-child(10), :nth-child(11){
       margin-top: -400px;
   }
+  .letters{
+    display: none;
+  }
+  /* .soundnames{ */
+    /* margin-bottom: -10px !important; */
+  /* } */
 }
 
 .playing{

@@ -62,7 +62,7 @@ const DrumKit = () => {
             <div className="bgImg"></div>
             {keys.map(key => (
                 <div key={key.key} data-key={key.key} className="key">
-                    {key.letter} <span>{key.sound}</span>
+                    <span className='letters'>{key.letter}</span> <span className='soundnames'>{key.sound}</span>
                     <audio data-key={key.key} src={key.src}></audio>
                 </div>
             ))}

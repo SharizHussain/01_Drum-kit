@@ -56,7 +56,7 @@ h1{
   padding: 4px;
 }
 
-.key span{
+.key .soundnames{
   /* position: absolute; */
   text-align: center;
   font-size: small;
